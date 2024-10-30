@@ -1,0 +1,47 @@
+.one{
+    position: absolute;
+    left:40%;
+    top:10%;
+    width:500px;
+    height:250px;
+    text-size-adjust:20px; 
+}
+.two{
+    position: absolute;
+    left:40%;
+    top:48%;
+    
+}
+a{
+    position: absolute;
+    left:45%;
+    top:92%;
+    color: white;
+    background-color:black ;
+    border-radius:2px;
+
+}
+form{
+    width: 300px;
+    height:450px;
+    border: 2px solid black;
+    margin-top: 5%;
+    margin-left: 30%;
+    border-radius: 10px;
+    text-size-adjust: 50px;
+    background-color:black;
+    color:aliceblue;
+}
+button{
+    color:white ;
+    background:black;
+    top:70%;
+    left:39%;
+    position: absolute;
+
+
+
+}
+
+
+

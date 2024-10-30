@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:\Users\ELCOT\Desktop\Book website\index.css">
+</head>
+    
+<body style="background-color: aqua;">
+    <form id="paymentForm">
+        <h1>PAYMENT</h1>
+        <label for="">Payers Name:</label><br><br>
+        <input type="text" id="one" value="Jayasri"><br><br>
+        <label for="">Payment Type</label><br><br>
+        <input type="text" id="two" value="UPI Payment"><br><br>
+        <label for="">UPI</label><br><br>
+        <input type="text" id="three" value="Yourname@ybl"><br><br>
+            <label for="amount">Total Amount</label><br>
+            <input type="number" id="amount" step="01" required />
+            <button type="submit">Submit Payment</button></form>
+        <script>
+            document.getElementById('paymentForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+    
+                const amount = parseFloat(document.getElementById('amount').value);
+                if (isNaN(amount) || amount <= 0) {
+                    alert('Please enter a valid payment amount.');
+                    return;
+                }
+    
+                // Here you can handle the payment processing logic
+                alert(`Payment of $${amount.toFixed(2)} submitted successfully!`);
+            });
+        </script>
+    
+</body>
+</html>
